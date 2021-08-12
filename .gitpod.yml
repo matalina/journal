@@ -1,0 +1,11 @@
+ports:
+  - port: 8000
+    onOpen: open-browser
+#tasks:
+#  - init: >
+#      composer install &&
+#      npm install &&
+#      cp .env.example .env &&
+#      php artisan key:generate &&
+#      touch /workspace/journal/database/journal.sqlite
+#    command: php artisan serve
