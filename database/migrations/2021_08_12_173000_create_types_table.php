@@ -20,8 +20,8 @@ class CreateTypesTable extends Migration
             $table->string('icon')->nullable();
             $table->string('prefix')->nullable();
             $table->string('suffix')->nullable();
-            $table->boolean('is_edit_only');
-            $table->boolean('is_signifier');
+            $table->boolean('is_edit_only')->default(0);
+            $table->boolean('is_signifier')->default(0);
 
             $table->timestamps();
         });

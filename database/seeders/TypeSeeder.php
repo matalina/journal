@@ -32,14 +32,14 @@ class TypeSeeder extends Seeder
 
         Type::create([
             'type' => 'event',
-            'icon' => '<i class="far fa-sticky-note"></i>',
+            'icon' => '<i class="far fa-calendar"></i>',
             'is_edit_only' => 0,
             'is_signifier' => 0,
         ]);
 
         Type::create([
             'type' => 'note',
-            'icon' => '<i class="far fa-square"></i>',
+            'icon' => '<i class="far fa-sticky-note"></i>',
             'is_edit_only' => 0,
             'is_signifier' => 0,
         ]);
@@ -74,7 +74,7 @@ class TypeSeeder extends Seeder
 
         Type::create([
             'type' => 'inspiration',
-            'icon' => '<i class="fas fa-exclamantion"></i>',
+            'icon' => '<i class="fas fa-exclamation"></i>',
             'is_edit_only' => 0,
             'is_signifier' => 1,
         ]);

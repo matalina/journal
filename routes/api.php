@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RapidLogging\BulletController;
+use App\Http\Controllers\RapidLogging\TypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ use App\Http\Controllers\RapidLogging\BulletController;
 });*/
 
 Route::apiResource('bullets', BulletController::class);
+Route::apiResource('types', TypeController::class);

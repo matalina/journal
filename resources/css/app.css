@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.form-input {
+    @apply p-2 border rounded;
+}
+
+.form-select {
+    @apply p-2 border rounded;
+}
+
+
+/* Daily Log */
+
+#daily-log form, #daily-log section {
+    @apply p-4 border rounded w-4/5 mx-auto my-2;
+}

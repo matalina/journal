@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default {
-    base_path: `${window.base_path}/api/`,
+    base_path: `${window.base_path}api/`,
 
     send(verb, path, data = null, with_files = false) {
         let headers = {

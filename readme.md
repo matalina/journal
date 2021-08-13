@@ -14,12 +14,13 @@
 ### Backend Testable Steps
 
 -   [x] Add Bullet
--   [ ] View Bullet List
+-   [x] Get Types
+-   [x] View Bullet List
 -   [ ] Edit Content of Bullet
+-   [ ] Complete Task
+-   [ ] Cancel Task/Event
 -   [ ] Migrate Bullet to Future Log
 -   [ ] Migrate Bullet to Collection
-
-
 
 **Bullet Notations:**
 

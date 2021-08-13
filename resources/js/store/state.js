@@ -1,6 +1,7 @@
 function state() {
     return {
         types: [],
+        bullets: [],
     };
 }
 

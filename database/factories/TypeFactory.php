@@ -21,8 +21,14 @@ class TypeFactory extends Factory
      */
     public function definition()
     {
+        $prefix = rand(0,1)?'<strike>':'';
         return [
-            //
+            'type' => $this->faker->text(20),
+            'icon' => '<i class="fas fa-question"></i>',
+            'is_signifier' => rand(0,1),
+            'is_edit_only' => rand(0,1),
+            'prefix' => $prefix,
+            'suffix' => $prefix == ''?'':'</strike>',
         ];
     }
 }

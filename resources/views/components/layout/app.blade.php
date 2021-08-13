@@ -7,6 +7,7 @@
         <title>Journal</title>
 
         <!-- Fonts -->
+        <script src="https://kit.fontawesome.com/8f19efb5ed.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->

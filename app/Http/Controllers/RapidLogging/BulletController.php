@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\RapidLogging\BulletStoreRequest;
 use App\Models\Bullet;
+use App\Http\Resources\BulletResource;
 
 class BulletController extends Controller
 {
@@ -16,7 +17,9 @@ class BulletController extends Controller
      */
     public function index()
     {
-        //
+        $bullets = Bullet::get();
+
+        return BulletResource::collection($bullets);
     }
 
     /**
@@ -37,6 +40,7 @@ class BulletController extends Controller
         return response()->json([
             'success' => 1,
             'message' => 'Added bullet.',
+            'data' => $bullet,
         ]);
     }
 

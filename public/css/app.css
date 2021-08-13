@@ -31867,6 +31867,31 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding: 0.5rem;
+}
+
+.form-select {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding: 0.5rem;
+}
+
+/* Daily Log */
+
+#daily-log form, #daily-log section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding: 1rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

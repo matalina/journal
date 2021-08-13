@@ -10,4 +10,8 @@ const app = new Vue({
     el: '#app',
     router,
     store,
+    mounted() {
+        this.$store.dispatch('get_types');
+        this.$store.dispatch('get_bullets');
+    }
 });
