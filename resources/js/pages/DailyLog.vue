@@ -40,6 +40,7 @@
         </form>
         <section id="log">
             <h1>Daily Log</h1>
+            <empty-list name="daily log" v-if="bullets_by_date(display_date).length === 0"/>
             <ul>
                 <li
                     v-for="bullet in bullets_by_date(display_date)"
@@ -57,10 +58,11 @@ import moment from 'moment';
 import { mapGetters } from 'vuex';
 import api from '../api';
 import Bullet from '../components/Bullet.vue';
+import EmptyList from '../components/EmptyList.vue';
 
 export default {
     name: 'daily-log',
-    components: { bullet: Bullet },
+    components: { bullet: Bullet, 'empty-list': EmptyList },
     data() {
         return {
             display_date: moment(),
